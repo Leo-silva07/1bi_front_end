@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <fieldset> <!--Insere uma margem em volta do formulario-->
+        <legend>Registrar-se</legend> <!--Insere um título para o grupo de campos-->
+        <h3>Informe seus dados para realizar o cadastro na plataforma</h3>
+
+        <form action="/url-api-back-end" method="post">
+
+            <label for="nome">Informe seu nome</label>
+            <input type="text" id="nome" name="nome" title="Informe seu nome completo" 
+                pattern="[A-Za-z]+"
+                placeholder="Nome" required maxlength="10">
+            <br>
+            <br>
+
+            <label for="email">Informe seu email</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <br>
+            <br>
+
+            <label for="senha">Informe sua senha</label>
+            <input type="password" id="senha" name="senha" pattern="[0-9]+" placeholder="Senha" required maxlength="6">
+            <br>
+            <br>
+
+            <label for="bio">Insira sua biografia</label>
+            <textarea name="bio" id="bio" rows="6" cols="26" style="resize: none;" placeholder="Insira..." required
+                maxlength="100">
+            </textarea>
+            <br>
+            <br>
+
+            <label for="time">Selecione o melhor time do BR</label>
+            <br>
+            <select name="melhor-time" id="time" required>
+                <option value="" selected disabled>Selecione</option>
+                <optgroup label="Times séria A"></optgroup>
+                <option value="corinthians">corinthians</option>
+                <option value="corinthianss">corinthians</option>
+                <option value="corinthians">corinthians</option>
+                <option value="corinthians">corinthians</option>
+                </optgroup>
+                <optgroup label="Times séria B">
+                    <option value="criciuma">criciuma</option>
+                    <option value="guarani">guarani</option>
+                    <option value="vila-nova">vila nova</option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+
+            <button onclick="alert('Cadastro realizado com sucesso!')">Cadastrar</button>
+            <!-- <input type="submit" value="Enviar"> -->
+        </form>
+    </fieldset>
+</body>
+
+</html>
