@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    background-color: #f0f0f0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.caixa {
+    width: 140px;
+    height: 140px;
+    background-color: #e100ff;
+    border: solid 6px #000;
+    
+}
+
+
+@media (max-width: 768px) {
+    .caixa {
+        width: 80px;
+        height: 80px;
+    }
+}
