@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgba(200, 255, 200, 0.6);
+}
+
+section {
+    border: 3px solid green;
+    padding: 10px;
+    margin: 10px;
+}
+
+img {
+    width: 285px;
+    height: 250px;
+    object-fit: cover;
+    
+}
+
+#foto-Corinthians {
+    width: 600px;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color:#ccc
+}
+
+.tabela-br {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+thead {
+    background-color: green;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.foto-time {
+    width: 30px;
+    height: auto;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.conteudo-lado-a-lado {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.campo-extra {
+    display: none;
+}
+
+#concorda-sim:checked ~ .campo-extra {
+    display: block;
+}
+
+header {
+    background-color: rgba(0, 128, 0, 0.901);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.campo-extra input[type="text"],
+.campo-extra input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.campo-extra ~ input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+#concorda-sim {
+    margin-right: 8px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.selecoes-br {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .conteudo-lado-a-lado {
+        flex-direction: column;
+    }
+
+    section {
+        padding: 8px;
+        margin: 8px;
+    }
+}
