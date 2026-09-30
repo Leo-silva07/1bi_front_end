@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    width: 100%;
+    min-height: 100vh;
+}
+
+body {
+    background-color: rgba(200, 255, 200, 0.6);
+    color: #1a1a1a;
+}
+
+main {
+    width: 100%;
+}
+
+section, aside {
+    border: 3px solid green;
+    padding: 10px;
+    margin: 10px;
+    color: #1a1a1a;
+}
+
+section h2,
+section h3,
+section p,
+figcaption {
+    color: #1a1a1a;
+}
+
+img {
+    width: 285px;
+    height: 250px;
+    object-fit: cover;
+}
+
+#foto-Corinthians {
+    width: 600px;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ccc;
+}
+
+.tabela-br {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 0.9rem;
+    color: white;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-size: 0.9rem;
+    color: black;
+}
+
+thead {
+    background-color: green;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.foto-time {
+    width: 30px;
+    height: auto;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.conteudo-lado-a-lado {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+header {
+    background-color: rgba(0, 128, 0, 0.901);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.selecoes-br {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    padding: 12px;
+    background-color: #e8f5e9;
+    width: 100%;
+}
+
+nav a {
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+aside ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+aside li {
+    color: #1a1a1a;
+    padding: 4px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 16px;
+    background-color: rgba(0, 128, 0, 0.901);
+    color: white;
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .conteudo-lado-a-lado {
+        flex-direction: column;
+    }
+
+    section {
+        padding: 8px;
+        margin: 8px;
+    }
+}
